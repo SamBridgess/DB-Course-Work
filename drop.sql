@@ -1,0 +1,15 @@
+DROP TABLE operator_weapon;
+DROP TABLE Weapon_skin;
+DROP TABLE weapon_handle;
+DROP TABLE weapon_sight;
+DROP TABLE weapon_nozzle;
+DROP TABLE Handle;
+DROP TABLE Sight;
+DROP TABLE Nozzle;
+DROP TABLE Weapon;
+DROP TABLE Operator_skin;
+DROP TABLE Operator;
+DROP TABLE Map_stats;
+DROP TABLE Maps;
+DROP TABLE Users;
+DROP TABLE User_stats;

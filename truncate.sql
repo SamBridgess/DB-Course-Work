@@ -1,0 +1,15 @@
+TRUNCATE TABLE operator_weapon;
+TRUNCATE TABLE Weapon_skin;
+TRUNCATE TABLE weapon_handle;
+TRUNCATE TABLE weapon_sight;
+TRUNCATE TABLE weapon_nozzle;
+TRUNCATE TABLE Handle;
+TRUNCATE TABLE Sight;
+TRUNCATE TABLE Nozzle;
+TRUNCATE TABLE Weapon;
+TRUNCATE TABLE Operator_skin;
+TRUNCATE TABLE Operator;
+TRUNCATE TABLE Map_stats;
+TRUNCATE TABLE Maps;
+TRUNCATE TABLE Users;
+TRUNCATE TABLE User_stats;
