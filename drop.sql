@@ -7,6 +7,8 @@ DROP TABLE Handle;
 DROP TABLE Sight;
 DROP TABLE Nozzle;
 DROP TABLE Weapon;
+DROP TABLE operator_gadget;
+DROP TABLE secondary_gadget;
 DROP TABLE Operator_skin;
 DROP TABLE Operator;
 DROP TABLE Map_stats;
