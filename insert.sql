@@ -48,15 +48,15 @@ VALUES
     ('Blitz', 2, 2, true, 'G52-Tactical Shield', 1000, 1.1, 110, 8, 1),
     ('IQ', 3, 1, true, 'Electronics Detector', 1000, 1.1, 110, 9, 1),
 
-    ('Smoke', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 8, 1),
-    ('Mute', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 6, 1),
-    ('Castle', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 8, 1),
-    ('Pulse', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 10, 1),
-    ('Doc', 1, 3, false, 'Electronics Detector', 1000, 1.1, 110, 4, 1),
-    ('Rook', 1, 3, false, 'Electronics Detector', 1000, 1.1, 110, 1, 1),
-    ('Kapkan', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 4, 1),
-    ('Tachanka', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 7, 1),
-    ('Jager', 2, 2, false, 'Electronics Detector', 1000, 1.1, 110, 6, 1),
-    ('Bandit', 3, 1, false, 'Electronics Detector', 1000, 1.1, 110, 8, 1);
+    ('Smoke', 2, 2, false, 'Remote Gas Grenade', 1000, 1.1, 110, 8, 1),
+    ('Mute', 2, 2, false, 'Signal Disruptor', 1000, 1.1, 110, 6, 1),
+    ('Castle', 2, 2, false, 'Armor Panel', 1000, 1.1, 110, 8, 1),
+    ('Pulse', 2, 2, false, 'Heartbeat Sensor', 1000, 1.1, 110, 10, 1),
+    ('Doc', 1, 3, false, 'Stim Pistol', 1000, 1.1, 110, 4, 1),
+    ('Rook', 1, 3, false, 'Armor Pack', 1000, 1.1, 110, 1, 1),
+    ('Kapkan', 2, 2, false, 'Entry Denial Device', 1000, 1.1, 110, 4, 1),
+    ('Tachanka', 2, 2, false, 'Grenade Launcher', 1000, 1.1, 110, 7, 1),
+    ('Jager', 2, 2, false, 'Active Defense System', 1000, 1.1, 110, 6, 1),
+    ('Bandit', 3, 1, false, 'Shock Wire', 1000, 1.1, 110, 8, 1);
 
 

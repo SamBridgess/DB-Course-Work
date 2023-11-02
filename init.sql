@@ -52,6 +52,17 @@ CREATE TABLE IF NOT EXISTS Operator_skin(
     operator INTEGER REFERENCES Operator(id)
 );
 
+CREATE TABLE IF NOT EXISTS secondary_gadget(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(40),
+    team BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS operator_gadget(
+    operator_id INTEGER REFERENCES operator(id),
+    gadget_id INTEGER REFERENCES secondary_gadget(id)
+);
+
 
 
 CREATE TABLE IF NOT EXISTS Weapon(
