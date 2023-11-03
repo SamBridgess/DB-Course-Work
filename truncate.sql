@@ -1,17 +1,18 @@
 TRUNCATE TABLE weapon_nozzle;
 TRUNCATE TABLE weapon_sight;
 TRUNCATE TABLE weapon_handle;
-TRUNCATE TABLE Map_stats;
-TRUNCATE TABLE User_stats;
 TRUNCATE TABLE Weapon_skin;
-TRUNCATE TABLE operator_weapon;
-TRUNCATE TABLE Operator_skin;
-TRUNCATE TABLE Users;
-TRUNCATE TABLE Maps;
-TRUNCATE TABLE Operator;
-TRUNCATE TABLE secondary_gadget;
-TRUNCATE TABLE operator_gadget;
 TRUNCATE TABLE Weapon;
 TRUNCATE TABLE Nozzle;
 TRUNCATE TABLE Sight;
 TRUNCATE TABLE Handle;
+TRUNCATE TABLE operator_weapon;
+TRUNCATE TABLE operator_gadget;
+TRUNCATE TABLE Map_stats;
+TRUNCATE TABLE secondary_gadget;
+TRUNCATE TABLE Operator_skin;
+TRUNCATE TABLE Operator;
+TRUNCATE TABLE Users;
+TRUNCATE TABLE User_stats;
+TRUNCATE TABLE Maps;
+
