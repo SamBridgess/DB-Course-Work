@@ -48,3 +48,19 @@ CREATE OR REPLACE TRIGGER add_user_maps
 AFTER INSERT ON maps
 FOR EACH ROW
 EXECUTE FUNCTION add_map();
+
+
+CREATE OR REPLACE FUNCTION add_stats()
+RETURNS TRIGGER AS $$
+BEGIN
+  INSERT INTO map_stats (user_id, map_id, rounds_played, win_rate)
+  SELECT NEW.id, id, 0, 0 FROM maps;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE TRIGGER add_user_maps2
+AFTER INSERT ON users
+FOR EACH ROW
+EXECUTE FUNCTION add_stats();
