@@ -1,15 +1,15 @@
-INSERT INTO user_stats(id, win_rate, wins, loses, kd_ratio, kills, deaths)
+INSERT INTO user_stats(win_rate, wins, loses, kd_ratio, kills, deaths)
 VALUES
-    (1, 1.1, 110, 100, 1.1, 110, 100),
-    (2, 0.9, 90, 100, 0.8, 80, 100),
-    (3, 1.5, 150, 100, 1.6, 160, 100);
+    (1.1, 110, 100, 1.1, 110, 100),
+    (0.9, 90, 100, 0.8, 80, 100),
+    (1.5, 150, 100, 1.6, 160, 100);
 
 
-INSERT INTO users(name, level, rank, currency, stats)
+INSERT INTO users(name, level, rank, currency)
 VALUES
-    ('SamBridges.-', 260, 'Platinum 3', 10000, 1),
-    ('AshMainNoBrain', 110, 'Copper 5', 123433, 2),
-    ('VG-Rahkwal', 355, 'Emerald 2', 982475, 3);
+    ('SamBridges.-', 260, 'Platinum 3', 10000),
+    ('AshMainNoBrain', 110, 'Copper 5', 123433),
+    ('VG-Rahkwal', 355, 'Emerald 2', 982475);
 
 INSERT INTO maps(name, is_ranked, difficulty)
 VALUES
@@ -34,12 +34,6 @@ VALUES
     ('Tower', false, 8),
     ('Villa', true, 8),
     ('Yacht', true, 5);
-
-INSERT INTO map_stats(user_id, map_id, rounds_played, win_rate)
-VALUES
-    (1, 1, 100, 1.3),
-    (1, 2, 100, 1.1),
-    (1, 3, 100, 0.9);
 
 INSERT INTO operator(name, speed, armor, team, ability, price, win_rate, rounds_played, difficulty, owner)
 VALUES
