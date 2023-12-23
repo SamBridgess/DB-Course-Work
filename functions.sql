@@ -1,48 +1,48 @@
-CREATE OR REPLACE FUNCTION change_primary_weapon(oper_name varchar(40), weapon_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_primary_weapon(oper_id integer, weapon_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update operator set selected_primary = (select id from weapon where weapon.name = weapon_name) where operator.name = oper_name;
+    update operator set selected_primary = weapon_id where operator.id = oper_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_secondary_weapon(oper_name varchar(40), weapon_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_secondary_weapon(oper_id integer, weapon_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update operator set selected_secondary = (select id from weapon where weapon.name = weapon_name) where operator.name = oper_name;
+    update operator set selected_secondary = weapon_id where operator.id = oper_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_operator_skin(oper_name varchar(40), skin_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_operator_skin(oper_id integer, skin_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update operator set selected_skin = (select id from operator_skin where operator_skin.name = skin_name) where operator.name = oper_name;
+    update operator set selected_skin = skin_id where operator.id = oper_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_weapon_skin(weapon_name varchar(40), skin_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_weapon_skin(weapon_id integer, skin_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update weapon set selected_skin = (select id from weapon_skin where weapon_name.name = skin_name) where weapon.name = weapon_name;
+    update weapon set selected_skin = skin_id where weapon.id = weapon_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_weapon_nozzle(weapon_name varchar(40), nozzle_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_weapon_nozzle(weapon_id integer, nozzle_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update weapon set selected_nozzle = (select id from weapon_nozzle where weapon_nozzle.name = nozzle_name) where weapon.name = weapon_name;
+    update weapon set selected_nozzle = nozzle_id where weapon.id = weapon_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_weapon_sight(weapon_name varchar(40), sight_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_weapon_sight(weapon_id integer, sight_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update weapon set selected_sight = (select id from weapon_sight where weapon_sight.name = sight_name) where weapon.name = weapon_name;
+    update weapon set selected_sight = sight_id where weapon.id = weapon_id;
 END;
 $$ LANGUAGE plpgsql;
 
-CREATE OR REPLACE FUNCTION change_weapon_handle(weapon_name varchar(40), handle_name varchar(40))
-RETURNS VOID AS $$
+CREATE OR REPLACE FUNCTION change_weapon_handle(weapon_id integer, handle_id integer)
+    RETURNS VOID AS $$
 BEGIN
-  update weapon set selected_nozzle = (select id from weapon_handle where weapon_handle.name = handle_name) where weapon.name = weapon_name;
+    update weapon set selected_nozzle = handle_id where weapon.id = weapon_id;
 END;
 $$ LANGUAGE plpgsql;
